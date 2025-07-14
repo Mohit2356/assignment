@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1 CSS</title>
+    <link rel="stylesheet" href="./assignment 2.css.css">
+</head>
+
+<body>
+    <u>
+        <h1 align="center">CSS Assignment 1</h1>
+    </u>
+    <div class="div1">
+        <h2> Q1. What are the three ways to apply CSS to an HTML document?</h2>
+        <p><b> Ans.</b> The Three way to apply CSS is -
+        </p>
+        <ul>
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ul>
+    </div>
+    <div class="div2">
+        <h2>Q2. How do you link an external CSS file to an HTML page? </h2>
+        <p><b>Ans. </b>To link an external CSS file to an HTML document, you need to use the element within the section
+            of your HTML file. The element should have the rel attribute set to "stylesheet" and the href attribute
+            specifying the path to your CSS file.</p>
+    </div>
+    <div class="div1">
+        <h2>Q3. Where should you place the style tag in an HTML file? </h2>
+        <p><b>Ans.</b>The HTML style tag in HTML defines CSS for document styling. The style element is placed in the
+            head section of the document.</p>
+    </div>
+    <div class="div2">
+        <h2>Q4. What is the difference between inline and internal CSS? </h2>
+        <p><b>Ans. Inline CSS </b>- Applied directly within an HTML element's style attribute, affecting only that
+            specific element. <br> <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b>Internal CSS</b>- Defined within a style tag in the head section of an
+            HTML document, influencing the
+            entire page.
+        </p>
+    </div>
+    <div class="div1">
+        <h2>Q5. Which CSS implementation has the highest specificity: inline, internal, or external? </h2>
+        <p><b>Ans.</b>- Inline CSS has the highest specificity</p>
+    </div>
+    <div class="div2">
+        <h2>Q6. How do you select an element with a specific ID in CSS? </h2>
+        <p><b>Ans.</b>- To select an element with a specific ID in CSS, you use the hash symbol (#) followed by the ID
+            value of the element. </p>
+    </div>
+    <div class="div1">
+        <h2>Q7. Write a CSS rule to apply red color to all elements.  </h2>
+        <p> <b>Ans.</b>- p {
+            color: red;
+            } </p>
+    </div>
+    <div class="div2">
+        <h2>Q8. Write a CSS rule to apply background color to a class named .card.</h2>
+        <p><b>Ans.</b>- .card {
+            background-color: #f0f0f0;
+            } </p>
+    </div>
+    <div class="div1">
+        <h2>Q9. What is the difference between .title and #title selectors? </h2>
+        <p><b>Ans. .title </b>- All elements with the class title <br><br> &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;<b>#title</b>- All elements with the
+            ID title </p>
+    </div>
+    <div class="div2">
+        <h2>Q10. Which selector has more specificity: class or ID?</h2>
+        <p><b>Ans.</b>- An ID selector has more specificity than a class selector </p>
+    </div>
+    <div class="div1">
+        <h2>Q11. Write a CSS rule to give a solid red border of 2px to a div.</h2>
+        <p><b>Ans.</b>- div {
+            border: 2px solid red;
+            } </p>
+    </div>
+    <div class="div2">
+        <h2>Q12. How do you remove the border from an input element? </h2>
+        <p><b>Ans.</b>- input {
+            border: none;
+            } </p>
+    </div>
+    <div class="div1">
+        <h2>Q13. Apply a different border to each side of a box using CSS.</h2>
+        <p><b>Ans.</b>- .box {
+            border-top: 2px solid red;
+            border-right: 3px dashed green;
+            border-bottom: 4px dotted blue;
+            border-left: 5px double orange;
+            }</p>
+    </div>
+    <div class="div2">
+        <h2>Q14. What does the shorthand border: 1px dashed blue; mean? </h2>
+        <p><b>Ans.</b>- Means:
+
+            1px — the width of the border (1 pixel), &nbsp;
+
+            dashed — the style of the border (a dashed line), &nbsp;
+
+            blue — the color of the border </p>
+    </div>
+    <div class="div3">
+        <h2>Q15. Can we use border on inline elements? What happens? </h2>
+        <p><b>Ans.</b>- Yes, you can apply a border to inline elements (like span, a, etc.), and the border will appear
+            around the inline content. </p>
+    </div>
+    <div class="div4">
+        <h2>Q16. How do you make a square div appear circular using border-radius? </h2>
+        <p><b>Ans.</b>- To make a square div appear circular, you use the border-radius property and set it to 50%: <br>
+            <br> .square {
+            width: 100px; &nbsp;
+            height: 100px; &nbsp;
+            background-color: blue; &nbsp;
+            border-radius: 50%;
+            } </p>
+    </div>
+
+    <div class="div3">
+        <h2>Q17. What will border-radius: 10px 20px 30px 40px; do? </h2>
+        <p><b>Ans.</b>- Applies different border-radius values to each corner of a box, in this order: <br> <br>
+
+            Top-left corner: 10px, &nbsp;
+
+            Top-right corner: 20px &nbsp;
+
+            Bottom-right corner: 30px &nbsp;
+
+            Bottom-left corner: 40px </p>
+    </div>
+    <div class="div4">
+        <h2>Q18. Write CSS to round only the top-left and bottom-right corners. </h2>
+        <p><b>Ans.</b>- To round only the top-left and bottom-right corners, you can use these properties: <br><br>
+            .element {
+            border-top-left-radius: 15px; &nbsp; &nbsp;
+            border-bottom-right-radius: 15px;
+            } </p>
+    </div>
+    <div class="div3">
+        <h2>Q19. Can border-radius be applied to images? </h2>
+        <p><b>Ans.</b>- You can apply border-radius to images just like other elements. <br><br>
+            img {
+            border-radius: 10px;
+            } </p>
+    </div>
+    <div class="div4">
+        <h2>Q20. What happens if you apply border-radius to an element with an outline? </h2>
+        <p><b>Ans.</b>- If you apply border-radius to an element that also has an outline, here’s what happens: <br><br>
+            The border (and background) of the element will have rounded corners according to the border-radius value.
+            <br>
+            However, the outline does NOT follow the border-radius; it remains a rectangular shape around the element.
+            <br>
+            So, you’ll see a rounded border inside a rectangular outline. <br> <br>
+            .box {
+            border: 2px solid blue;
+            border-radius: 15px;
+            outline: 2px solid red;
+            }
+        <div class="div6"></div>
+        </p>
+    </div>
+
+    <div class="div3">
+        <h2>Q21. What’s the difference between margin and padding? </h2>
+        <p><b>Ans. - Padding</b> is the space inside the element’s border, between the content and the border. <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; padding: 20px; <br><br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <b>Margin </b> is the space outside the element’s border, between the
+            element and other elements. <br>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;margin: 20px </p>
+    </div>
+    <div class="div4">
+        <h2>Q22. How do you apply equal margin on all sides? </h2>
+        <p><b>Ans.</b>- To apply equal margin on all sides of an element in CSS, use the margin shorthand with a single
+            value: <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .element {
+            margin: 20px;
+            } </p>
+    </div>
+    <div class="div3">
+        <h2>Q23. What will margin: 10px 20px; do? </h2>
+        <p><b>Ans.</b>- Sets vertical and horizontal margins using two values: <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; First value (10px) → applies to top and bottom
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Second value (20px) → applies to left and right
+        </p>
+    </div>
+    <div class="div4">
+        <h2>Q24. How can you center a block element horizontally using margin? </h2>
+        <p><b>Ans.</b>- To center a block element horizontally using Margin: <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .element {
+            margin-left: auto;
+            margin-right: auto;
+            } </p>
+    </div>
+    <div class="div3">
+        <h2>Q25. What is margin collapse? Give an example </h2>
+        <p><b>Ans.</b>- Margin collapse is a behavior where vertical margins of adjacent block elements (or parent/child
+            elements) combine into a single margin rather than adding together. <br> <br>
+         &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<b> Example : </b> <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .box1 {
+  margin-bottom: 30px;
+  background: lightblue;
+}
+<br>
+ &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;.box2 {
+  margin-top: 50px;
+  background: lightgreen;
+}</p>
+    </div>
+
+
+
+</body>
+
+</html>
+</head>
+<body>
+    
+</body>
+</html>
