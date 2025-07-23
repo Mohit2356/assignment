@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .card{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        #box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Access the element with ID "title" and update its innerText to "Welcome to JavaScript!". -->
+    <h1 id="head1" >Paragraph</h1>
+
+  <!-- 2. Select all elements with class "card" and change the background color of the third one to "lightgray".  -->
+
+    <div class="card">Card 1</div>
+  <div class="card">Card 2</div>
+  <div class="card">Card 3</div>
+  <div class="card">Card 4</div>
+
+ <!-- 3. Use querySelector to select the first <h2> element and make its text italic using style.fontStyle. -->
+
+   <h2>This is the first heading</h2>
+  <h2>This is the second heading</h2>
+
+ <!-- 4. Change the innerHTML of an element with ID "info" to include a <u>Click here</u> link. -->
+  
+  <div id="info">Old content here</div>
+
+   <!-- 5. Write a function that sets the font size of an element with ID "heading" to 40px when called. -->
+   
+    <p id="para1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, possimus!</p>
+    
+    <!-- 6. Add an event listener to a button with ID "hoverBtn" that changes the background of a <div> with ID "box" to "orange" when hovered. -->
+
+    <div id="box"></div>
+    <button id="hoverBtn">Hover over me</button>
+
+    <!-- 7. On clicking a button with ID "hideBtn", hide a paragraph with ID "description" using style.display. -->
+
+    <p id="description">This is a description that will be hidden when you click the button.</p>
+  <button id="hideBtn">Hide Description</button>
+  <br><br>
+
+  <!-- 8. On clicking another button with ID "showBtn", show the hidden paragraph again.  -->
+
+  <button id="showBtn">Show Description</button>
+
+  <!-- 9. Select all <li> elements using getElementsByTagName and change the text of the last item to "Done".  -->
+
+   <ul>
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+  </ul>
+
+  <!-- 10. Using querySelectorAll, select all elements with class "highlight" and set their text color to "purple". -->
+  
+  <p class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ab!</p>
+  <div class="highlight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga odio eaque officia earum similique.</div>
+  
+
+
+
+   <script src="./18july.js"></script>
+        
+   
+</body>
+</html>
