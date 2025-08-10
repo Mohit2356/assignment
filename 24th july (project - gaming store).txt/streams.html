@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborg Gaming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="browse.css">
+    
+</head>
+<body>
+    <!-- nav start  -->
+    <section id="header">
+            <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+            <div class="search-input">
+                <form id="search" action="#">
+                    
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse.html">Browse</a></li>
+                    <li><a href="details.html">Details</a></li>
+                    <li><a class="active" href="streams.html">Streams</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    
+                </ul>
+            </div>
+    </section>
+    <!-- nav end  -->
+    <!-- hero start  -->
+    <div id="c-bg">
+        
+            <div class="container">
+            <!-- Featured Games -->
+            <div class="featured-section">
+                <h2><span class="white">Live</span> <span class="pink">Streams</span></h2>
+                <div class="carousel-wrapper">
+                <button class="scroll-btn left" onclick="scrollLeft()"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel" id="carousel">
+                    <!-- Game Cards -->
+                    <div class="game-card">
+                    <img src="images/featured-01.jpg" alt="Gamezer">
+                    <h3>Gamezer</h3>
+                    <div class="info">
+                        <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span><i class="fa-solid fa-download"></i> 2.3M</span>
+                    </div>
+                    </div>
+
+                    <div class="game-card">
+                    <img src="images/featured-02.jpg" alt="Island Rusty">
+                    <h3>Island Rusty</h3>
+                    <div class="info">
+                        <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span><i class="fa-solid fa-download"></i> 2.3M</span>
+                    </div>
+                    </div>
+
+                    <div class="game-card">
+                    <img src="images/featured-03.jpg" alt="CS-GO">
+                    <h3>CS-GO</h3>
+                    <div class="info">
+                        <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span><i class="fa-solid fa-download"></i> 2.3M</span>
+                    </div>
+                    </div>
+                </div>
+                <button class="scroll-btn right" onclick="scrollRight()"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Top streamwers -->
+            <div class="top-downloaded">
+                <h2><span class="white">Top</span> <span class="pink">Streamers</span></h2>
+
+                <div class="top-game" style="margin-bottom: 50px;">
+                    <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-01.jpg" alt="KenganC">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">KenganC</span>
+                        </div>
+                    <button class="follow">Follow</button>
+                </div>
+
+                <div class="top-game" style="margin-bottom: 50px;">
+                    <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-02.jpg" alt="KenganC">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">Areluwa</span>
+                        </div>
+                    <button class="follow">Follow</button>
+                </div>
+
+                <div class="top-game" style="margin-bottom: 50px;">
+                    <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-03.jpg" alt="KenganC">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">LahutaM</span>
+                        </div>
+                    <button class="follow">Follow</button>
+                </div>
+
+                <a href="#" class="view-all" style="margin-top: 30px;">View All Games</a>
+            </div>
+            </div>
+
+
+
+
+            <div class="pop-bg">
+            <div class="pop-head">
+                <h2 id="dec"> Most Popular&nbsp;</h2> 
+                <h2 id="pnk">Right Now</h2>
+            </div>
+
+            <!-- first-row start -->
+            <div id="pop-brands" class="section-p1">
+                <div class="first-row">
+                    <!-- pop 1  -->
+                    <div class="pop-box">
+                        <img src="images/stream-08.jpg" alt="">
+                        <div class="fort">
+                        <h5>Fortnite</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                    <!-- pop 2 -->
+                    <div class="pop-box">
+                        <img src="images/stream-07.jpg" alt="">
+                        <div class="fort">
+                        <h5>PubG</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                       
+                    </div>
+                    <!-- pop 3 -->
+                    <div class="pop-box">
+                        <img src="images/stream-06.jpg" alt="">
+                        <div class="fort">
+                        <h5>Dota 2</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                    <!-- pop 4 -->
+                    <div class="pop-box">
+                        <img src="images/stream-05.jpg" alt="">
+                        <div class="fort">
+                        <h5>CS-GO</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- first-row end  -->
+
+            <!-- seconed row start -->
+            <div id="pop-brands" class="section-p1">
+                <div class="first-row">
+                    <!-- pop 5  -->
+                    <div class="pop-box">
+                        <img src="images/stream-05.jpg" alt="">
+                        <div class="fort">
+                        <h5>Fortnite</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                    <!-- pop 6 -->
+                    <div class="pop-box">
+                        <img src="images/stream-06.jpg" alt="">
+                        <div class="fort">
+                        <h5>PubG</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                    <!-- pop 6 -->
+                    <div class="pop-box">
+                        <img src="images/stream-07.jpg" alt="">
+                        <div class="fort">
+                        <h5>Dota 2</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                    <!-- pop 6 -->
+                    <div class="pop-box">
+                        <img src="images/stream-08.jpg" alt="">
+                        <div class="fort">
+                        <h5>CS-GO</h5>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <h5>4.8</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- seconed row end -->
+             <a href=""><button>Load More Streams</button></a>
+        </div>
+
+    </div> 
+
+ <!-- FOOTER -->
+                <footer class="site-footer">
+                    <p>Copyright © 2036 Cyborg Gaming Company. All rights reserved.</p>
+                    <p>Design: <a href="https://templatemo.com" target="_blank" rel="noopener noreferrer">TemplateMo</a></p>
+                </footer>
+
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

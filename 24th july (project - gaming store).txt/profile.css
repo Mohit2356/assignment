@@ -1,0 +1,143 @@
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1f2122;
+  border-radius: 30px;
+  padding: 20px;
+  /* gap: 30px; */
+  margin: 55px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  justify-content: center;
+}
+
+/* LEFT SECTION IMAGE */
+.left-section img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 25px;
+  margin: 20px 0;
+}
+
+/* MIDDLE SECTION CONTENT */
+.middle-section {
+  flex: 1;
+  min-width: 250px;
+  margin-left: 20px;
+}
+
+/* STATUS BADGE */
+.status {
+  display: inline-block;
+  background-color: #EC6090;
+  height: 45px;
+  width: 120.5px;
+  border-radius: 23px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 0.5s ease;
+  text-align: center;
+  padding-top: 13px;
+  letter-spacing: 0.1em;
+}
+
+/* MIDDLE SECTION TEXT */
+.middle-section h2 {
+  margin: 15px 0 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.middle-section p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 2em;
+}
+
+/* BUTTON STYLE */
+.profile-card button {
+  background-color: #EC6090;
+  border: none;
+  height: 45px;
+  width: 160px;
+  border-radius: 23px;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 0.5s ease;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* BUTTON HOVER */
+.profile-card button:hover {
+  background-color: #ffffff;
+  color: #EC6090;
+}
+
+
+
+/* RIGHT PANEL */
+.right-section {
+  min-width: 220px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #27292a;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* LIST INSIDE RIGHT SECTION */
+.right-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.right-section li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #444;
+  padding: 12px 0;
+  font-size: 15px;
+  color: #999;
+  margin-top: 20px;
+  background: transparent;
+}
+
+.right-section strong {
+  color: #f04d91;
+  background-color: transparent;
+}
+
+/* GENERAL SPAN */
+span {
+  background-color: transparent;
+}
+
+/* RESPONSIVE BEHAVIOR */
+@media (max-width: 1024px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profile-card button {
+    margin-left: 0;
+    align-self: flex-start;
+    position: relative;
+  }
+
+  .right-section {
+    width: 100%;
+    max-width: none;
+  }
+
+  .left-section img {
+    margin: 0 auto;
+    display: block;
+  }
+}

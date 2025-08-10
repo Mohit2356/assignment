@@ -1,0 +1,345 @@
+.video-section {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  margin: 40px;
+}
+
+/* Poster Image */
+.poster{
+    background-color: transparent;
+}
+.poster img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Thumbnail Container */
+.video-thumbnail {
+  position: relative;
+  width: 650px;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* YouTube Preview Image */
+.video-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+/* Play Button Overlay */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: black; */
+  color: #e50914;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  /* box-shadow: 0 5px 20px rgba(0,0,0,0.5); */
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .video-section {
+    flex-direction: column;
+  }
+
+  .poster img,
+  .video-thumbnail {
+    width: 100%;
+  }
+}
+
+
+/* fortnite details */
+
+.fort-head {
+      background-color:transparent;
+      text-align: center;
+      padding: 40px 20px;
+      width: auto;
+    
+    }
+
+    .fort-head h1 {
+      color: white;
+      font-size: 42px;
+      font-weight: 900;
+      margin: 0;
+      letter-spacing: 1px;
+      background-color: transparent;
+
+    }
+
+    @media (max-width: 600px) {
+      .fort-head h1 {
+        font-size: 32px;
+      }
+    }
+
+.game-details-section {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  width: auto;
+  border-radius: 20px;
+  margin: 0px 50px
+}
+
+.game-details-container {
+  /* background-color: #2a2a2a; */
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.game-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.game-category {
+  font-size: 16px;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+.game-stats {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #f472b6;
+  margin-top: 10px;
+}
+
+.game-stats span {
+  margin-right: 6px;
+}
+
+.game-images {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.game-images img {
+  width: 100%;
+  max-width: 32%;
+  border-radius: 15px;
+  object-fit: cover;
+  height: 170px;
+}
+
+.game-description {
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 25px;
+  line-height: 1.6;
+}
+
+.download-button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.download-btn {
+  background-color: transparent;
+  border: 1px solid #f472b6;
+  padding: 15px 30px;
+  border-radius: 30px;
+  color: #f472b6;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  width: 900px;
+  text-align: center;
+}
+
+.download-btn:hover {
+  background-color: #f472b6;
+  color: #fff;
+}
+
+/* 🔄 Responsive Design */
+@media (max-width: 768px) {
+  .game-stats {
+    justify-content: flex-start;
+    gap: 15px;
+  }
+
+  .game-images img {
+    max-width: 48%;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .game-images img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .download-btn {
+    width: 300px;
+    text-align: center;
+
+  }
+}  
+
+
+                /* <!-- other related games  --> */
+
+
+.related-games {
+  padding: 40px 20px;
+  /* background-color: #29292a; */
+  margin: 30px;
+  border-radius: 23px;
+  margin: 50px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  /* background-color: #2a2a2a; */
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.related-games h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.game-pink{
+    color: #f472b6;
+}
+
+.related-games h2 span {
+  text-decoration: underline;
+  margin-right: 5px;
+
+}
+
+.games-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.game-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.game-card {
+  /* background: #1e1e1e; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  transition: background 0.3s ease;
+}
+
+.game-card:hover {
+  background: #333;
+}
+
+.game-card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.game-info {
+  flex: 1;
+  color: #fff;
+  background-color: transparent;
+}
+
+.game-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.game-info p {
+  margin: 3px 0;
+  color: #aaa;
+  background-color: transparent;
+}
+
+.game-stats {
+  text-align: right;
+  font-size: 14px;
+  color: #f472b6;
+  background-color: transparent;
+}
+
+.game-stats p {
+  margin: 3px 0;
+  background-color: transparent;
+}
+
+/* 🔁 Responsive */
+@media (max-width: 768px) {
+  .game-row {
+    flex-direction: column;
+  }
+
+  .game-card {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .game-stats {
+    text-align: left;
+  }
+}

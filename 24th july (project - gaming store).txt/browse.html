@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborg Gaming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="browse.css">
+    
+    
+</head>
+<body>
+    <!-- nav start  -->
+    <section id="header">
+            <a href="#"><img src="images/logo.png" class="logo" alt=""></a>
+            <div class="search-input">
+                <form id="search" action="#">
+                    
+                    <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active"  href="browse.html">Browse</a></li>
+                    <li><a href="details.html">Details</a></li>
+                    <li><a href="streams.html">Streams</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    
+                </ul>
+            </div>
+    </section>
+    <!-- nav end  -->
+    <!-- hero start  -->
+    <div id="c-bg">
+        <div class="container">
+            <!-- Featured Games -->
+            <div class="featured-section">
+                <h2><span class="white">Featured</span> <span class="pink">Games</span></h2>
+                <div class="carousel-wrapper">
+                <button class="scroll-btn left" onclick="scrollLeft()"><i class="fa-solid fa-chevron-left"></i></button>
+                <div class="carousel" id="carousel">
+                    <!-- Game Cards -->
+                    <div class="game-card">
+                    <img src="images/featured-01.jpg" alt="Gamezer">
+                    <h3>Gamezer</h3>
+                    <div class="info">
+                        <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span><i class="fa-solid fa-download"></i> 2.3M</span>
+                    </div>
+                    </div>
+
+                    <div class="game-card">
+                    <img src="images/featured-02.jpg" alt="Island Rusty">
+                    <h3>Island Rusty</h3>
+                    <div class="info">
+                        <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span><i class="fa-solid fa-download"></i> 2.3M</span>
+                    </div>
+                    </div>
+
+                    <div class="game-card">
+                    <img src="images/featured-03.jpg" alt="CS-GO">
+                    <h3>CS-GO</h3>
+                    <div class="info">
+                        <span><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span><i class="fa-solid fa-download"></i> 2.3M</span>
+                    </div>
+                    </div>
+                </div>
+                <button class="scroll-btn right" onclick="scrollRight()"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Top Downloaded -->
+            <div class="top-downloaded">
+                <h2><span class="white">Top</span> <span class="pink">Downloaded</span></h2>
+
+                <div class="top-game">
+                <img src="images/game-01.jpg" alt="Fortnite">
+                <div>
+                    <strong>Fortnite</strong>
+                    <p>Sandbox</p>
+                    <div class="info">
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                    <span><i class="fa-solid fa-download"></i> 2.2M</span>
+                    </div>
+                </div>
+                <button class="download-icon"><i class="fa-solid fa-download"></i></button>
+                </div>
+
+                <div class="top-game">
+                <img src="images/game-02.jpg" alt="CS-GO">
+                <div>
+                    <strong>CS-GO</strong>
+                    <p>Legendary</p>
+                    <div class="info">
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                    <span><i class="fa-solid fa-download"></i> 2.2M</span>
+                    </div>
+                </div>
+                <button class="download-icon"><i class="fa-solid fa-download"></i></button>
+                </div>
+
+                <div class="top-game">
+                <img src="images/game-03.jpg" alt="PugG">
+                <div>
+                    <strong>PugG</strong>
+                    <p>Battle Royale</p>
+                    <div class="info">
+                    <span><i class="fa-solid fa-star"></i> 4.9</span>
+                    <span><i class="fa-solid fa-download"></i> 2.2M</span>
+                    </div>
+                </div>
+                <button class="download-icon"><i class="fa-solid fa-download"></i></button>
+                </div>
+
+                <a href="#" class="view-all">View All Games</a>
+            </div>
+            </div>
+
+
+            <!-- live streams  -->
+
+
+                <section class="live-stream-section">
+                <h2><span class="white">How To Start Your</span> <span class="pink">Live Stream</span></h2>
+
+                <div class="cards">
+                <!-- Card 1 -->
+                <div class="card">
+                    <div class="icon">
+                    <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <h3>Go To Your Profile</h3>
+                    <p>
+                    Cyborg Gaming is free HTML CSS website template provided by TemplateMo. This is Bootstrap v5.2.0 layout.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="icon">
+                    <i class="fa-solid fa-tower-broadcast" ></i>
+                    </div>
+                    <h3>Live Stream Button</h3>
+                    <p>
+                    If you wish to support us, you can make a <span class="highlight">small contribution via PayPal</span> to info [at] templatemo.com
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="icon">
+                    <i class="fa-solid fa-video"></i>
+                    </div>
+                    <h3>You Are Live</h3>
+                    <p>
+                    You are not allowed to redistribute this template's downloadable ZIP file on any other template collection website.
+                    </p>
+                </div>
+                </div>
+
+                <a href="profile.html" class="action-button">Go To Profile</a>
+                </section>
+
+
+            <!-- /* most popular live stream  */ -->
+
+
+                <section class="popular-streams">
+                    <h2><span class="white-text">Most Popular</span> <span class="pink-text">Live Stream</span></h2>
+
+                    <div class="streams-grid">
+                    <!-- Card 1 -->
+                    <div class="stream-card">
+                        <img class="thumbnail" src="images/stream-01.jpg" alt="Stream 1">
+                        <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-01.jpg" alt="KenganC">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">KenganC</span>
+                        </div>
+                        <h3 class="title">Just Talking<br>With Fans</h3>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="stream-card">
+                        <img class="thumbnail" src="images/stream-02.jpg" alt="Stream 2">
+                        <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-02.jpg" alt="LunaMa">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">LunaMa</span>
+                        </div>
+                        <h3 class="title">CS-GO 36<br>Hours Live Stream</h3>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="stream-card">
+                        <img class="thumbnail" src="images/stream-03.jpg" alt="Stream 3">
+                        <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-03.jpg" alt="Areluwa">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">Areluwa</span>
+                        </div>
+                        <h3 class="title">Maybe Nathej<br>Allnight Chillin'</h3>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="stream-card">
+                        <img class="thumbnail" src="images/stream-04.jpg" alt="Stream 4">
+                        <div class="streamer-info">
+                        <img class="avatar" src="images/avatar-04.jpg" alt="GangTm">
+                        <span class="verified"><i class="fas fa-check-circle"></i></span>
+                        <span class="username pink-text">GangTm</span>
+                        </div>
+                        <h3 class="title">Live Streaming<br>Till Morning</h3>
+                    </div>
+                    </div>
+
+                    <a href="streams.html" class="discover-button">Discover All Streams</a>
+                </section>
+    </div> 
+
+         <!-- FOOTER -->
+                <footer class="site-footer">
+                    <p>Copyright © 2036 Cyborg Gaming Company. All rights reserved.</p>
+                    <p>Design: <a href="https://www.linkedin.com/in//gaurav-garg--97810a2a6/" target="_blank" rel="noopener noreferrer">Gaurav Garg</a></p>
+                </footer>
+
+        
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
